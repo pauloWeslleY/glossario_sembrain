@@ -63,6 +63,7 @@ const NavBar = ({ title }: NavBarProps) => {
                 fontFamily={'Poppins'}
                 fontWeight={'regular'}
                 variant={'outline'}
+                color={'zinc.100'}
                 onClick={() => navigate('/')}
               >
                 Home
@@ -71,6 +72,7 @@ const NavBar = ({ title }: NavBarProps) => {
                 fontFamily={'Poppins'}
                 fontWeight={'regular'}
                 variant={'outline'}
+                color={'zinc.100'}
                 onClick={() => navigate('/symbol')}
               >
                 Símbolos Básicos

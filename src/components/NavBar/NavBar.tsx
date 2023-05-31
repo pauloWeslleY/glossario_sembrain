@@ -61,10 +61,7 @@ const NavBar = ({ title }: NavBarProps) => {
               display={{ base: 'none', md: 'inline-flex' }}
             >
               <Btn title="Home" onClick={() => navigate('/')} />
-              <Btn
-                title="Símbolos Básicos"
-                onClick={() => navigate('/symbol')}
-              />
+              <Btn title="Glossário" onClick={() => navigate('/symbol')} />
             </HStack>
 
             <Box display={{ base: 'inline-flex', md: 'none' }}>
@@ -93,27 +90,15 @@ const NavBar = ({ title }: NavBarProps) => {
                 spacing={3}
                 rounded="sm"
                 shadow="sm"
+                zIndex={2}
               >
                 <CloseButton
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" variant="ghost">
-                  Features
-                </Button>
-                <Button w="full" variant="ghost">
-                  Pricing
-                </Button>
-                <Button w="full" variant="ghost">
-                  Blog
-                </Button>
-                <Button w="full" variant="ghost">
-                  Company
-                </Button>
-                <Button w="full" variant="ghost">
-                  Sign in
-                </Button>
+                <Btn title="Home" onClick={() => navigate('/')} />
+                <Btn title="Glossário" onClick={() => navigate('/symbol')} />
               </VStack>
             </Box>
           </HStack>

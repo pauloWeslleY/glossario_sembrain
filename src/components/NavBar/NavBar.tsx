@@ -21,13 +21,12 @@ interface NavBarProps {
 }
 
 const NavBar = ({ title }: NavBarProps) => {
-  const BACKGROUND_NAVBAR = useColorModeValue('whiteAlpha.400', 'violet.400')
   const mobileNav = useDisclosure()
   const navigate = useNavigate()
 
   return (
     <chakra.nav
-      bg={BACKGROUND_NAVBAR}
+      bg={'violet.400'}
       w={'full'}
       px={{ base: 2, sm: 4 }}
       py={4}
@@ -101,7 +100,7 @@ const NavBar = ({ title }: NavBarProps) => {
                 p={2}
                 pb={4}
                 m={2}
-                bg={BACKGROUND_NAVBAR}
+                bg={'violet.400'}
                 spacing={3}
                 rounded="sm"
                 shadow="sm"

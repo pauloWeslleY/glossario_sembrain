@@ -5,8 +5,6 @@ function TableContainer({ children }: { children: ReactNode }) {
   return (
     <Table
       w="full"
-      bg="white"
-      _dark={{ bg: 'zinc.900' }}
       my={8}
       display={{
         base: 'block',

@@ -3,7 +3,6 @@ import {
   chakra,
   Box,
   Flex,
-  useColorModeValue,
   VisuallyHidden,
   HStack,
   Button,

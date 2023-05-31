@@ -1,3 +1,5 @@
 import NavBar from './NavBar'
+import NavBarMobile from './NavBarMobile'
+import NavLink from './NavLink'
 
-export { NavBar }
+export { NavBar, NavBarMobile, NavLink }

@@ -10,7 +10,7 @@ export const THEME = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'zinc.900',
+        bg: 'zinc.100',
         color: 'violet.200',
         fontFamily: `'OpenSans', sans-serif`,
       },

@@ -1,7 +1,7 @@
 import { ReactNode, memo } from 'react'
 import { Tr } from '@chakra-ui/react'
 
-function TableRowSymbols({ children }: { children: ReactNode }) {
+function TableRowGlossary({ children }: { children: ReactNode }) {
   return (
     <Tr
       display={{
@@ -21,4 +21,4 @@ function TableRowSymbols({ children }: { children: ReactNode }) {
   )
 }
 
-export default memo(TableRowSymbols)
+export default memo(TableRowGlossary)

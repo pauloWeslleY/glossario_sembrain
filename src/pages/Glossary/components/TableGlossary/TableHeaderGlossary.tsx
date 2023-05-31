@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { Th, Thead, Tr } from '@chakra-ui/react'
 
-function TableHeaderSymbols() {
+function TableHeaderGlossary() {
   const HEADER_TABLE: Array<string> = [
     'Notas',
     'Dó',
@@ -32,7 +32,7 @@ function TableHeaderSymbols() {
             key={`${index}${props}`}
             fontSize={'md'}
             fontWeight={'bold'}
-            color={'purple.800'}
+            color={'purple.700'}
           >
             {props}
           </Th>
@@ -42,4 +42,4 @@ function TableHeaderSymbols() {
   )
 }
 
-export default memo(TableHeaderSymbols)
+export default memo(TableHeaderGlossary)

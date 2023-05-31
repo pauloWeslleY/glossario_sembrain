@@ -9,6 +9,8 @@ export function Btn({ title, ...rest }: BtnProps) {
     <Button
       {...rest}
       px={8}
+      fontFamily={'Poppins'}
+      fontWeight={'regular'}
       bg={'transparent'}
       borderColor={'transparent'}
       borderStyle={'solid'}
@@ -25,8 +27,6 @@ export function Btn({ title, ...rest }: BtnProps) {
         borderStyle: 'solid',
         color: 'violet.600',
       }}
-      fontFamily={'Poppins'}
-      fontWeight={'regular'}
     >
       {title}
     </Button>

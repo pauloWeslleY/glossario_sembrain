@@ -4,7 +4,7 @@ import { NavBar } from './components/NavBar'
 export function App() {
   return (
     <>
-      <NavBar title="Glossário Musicografia Braille" />
+      <NavBar title="Musicografia Braille" />
       <Outlet />
     </>
   )

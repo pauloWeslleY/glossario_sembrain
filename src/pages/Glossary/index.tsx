@@ -1,7 +1,7 @@
 import { Container, Flex, Heading, Text } from '@chakra-ui/react'
-import { TableSymbols } from './components/TableSymbols'
+import { TableGlossary } from './components/TableGlossary'
 
-export function Symbol() {
+export function Glossary() {
   return (
     <Container maxW={'8xl'}>
       <Flex mt={4}>
@@ -17,7 +17,7 @@ export function Symbol() {
         notas e os respectivos pontos a serem preenchidos na célula braille.
       </Text>
 
-      <TableSymbols />
+      <TableGlossary />
 
       <Text as={'small'} mb={2} color={'violet.400'}>
         Fonte: Manual Internacional de Musicografia Braille. Ministério da

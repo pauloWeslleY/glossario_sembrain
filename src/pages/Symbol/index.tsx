@@ -20,8 +20,8 @@ export function Symbol() {
       <TableSymbols />
 
       <Text as={'small'} mb={2} color={'violet.400'}>
-        Nas tabelas seguintes apresentamos as figuras rítmicas seguidas das
-        notas e os respectivos pontos a serem preenchidos na célula braille.
+        Fonte: Manual Internacional de Musicografia Braille. Ministério da
+        Educação - Secretaria de Educação Especial.
       </Text>
     </Container>
   )

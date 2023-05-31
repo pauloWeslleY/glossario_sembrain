@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
+import { Btn } from '../Button'
 
 interface NavBarProps {
   title: string
@@ -59,24 +60,11 @@ const NavBar = ({ title }: NavBarProps) => {
               color={'violet.600'}
               display={{ base: 'none', md: 'inline-flex' }}
             >
-              <Button
-                fontFamily={'Poppins'}
-                fontWeight={'regular'}
-                variant={'outline'}
-                color={'zinc.100'}
-                onClick={() => navigate('/')}
-              >
-                Home
-              </Button>
-              <Button
-                fontFamily={'Poppins'}
-                fontWeight={'regular'}
-                variant={'outline'}
-                color={'zinc.100'}
+              <Btn title="Home" onClick={() => navigate('/')} />
+              <Btn
+                title="Símbolos Básicos"
                 onClick={() => navigate('/symbol')}
-              >
-                Símbolos Básicos
-              </Button>
+              />
             </HStack>
 
             <Box display={{ base: 'inline-flex', md: 'none' }}>

@@ -4,6 +4,8 @@ import { AppRoutes } from './routes/app.router.tsx'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import { THEME } from './themes/themes'
 
+import './styles/global.css'
+
 const ElementRoot = document.getElementById('root') as HTMLElement
 
 ReactDOM.createRoot(ElementRoot).render(

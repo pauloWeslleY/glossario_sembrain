@@ -3,6 +3,7 @@ import { NavLink as NavItem } from 'react-router-dom'
 import { Link } from '@chakra-ui/react'
 
 interface NavLinkProps {
+  title: string
   label: string
   path: string
   onHandleClick?: () => void
@@ -11,20 +12,23 @@ interface NavLinkProps {
 export const MENU_LINKS: Array<NavLinkProps> = [
   {
     label: 'Home',
+    title: 'Link que direciona para a pagina inicial do Glossário.',
     path: '/',
   },
   {
     label: 'Glossário',
+    title: 'Link que direciona para a pagina contendo o conteúdo do Glossário.',
     path: '/glossary',
   },
 ]
 
-function NavLink({ path, label, onHandleClick }: NavLinkProps) {
+function NavLink({ title, path, label, onHandleClick }: NavLinkProps) {
   return (
     <Link
       as={NavItem}
       to={path}
       p={2}
+      aria-label={title}
       borderColor={'transparent'}
       borderStyle={'solid'}
       borderWidth={2}

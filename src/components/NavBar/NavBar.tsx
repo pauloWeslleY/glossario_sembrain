@@ -10,6 +10,8 @@ import {
 import { Btn } from '../Button'
 import { NavBarMobile } from './index'
 
+import { MENU_LINKS } from './NavLink'
+
 interface NavBarProps {
   title: string
 }
@@ -30,7 +32,7 @@ const NavBar = ({ title }: NavBarProps) => {
           <Flex>
             <chakra.a
               href="/"
-              title="Choc Home Page"
+              title="Titulo da pagina"
               display={'flex'}
               alignItems={'center'}
             >
@@ -53,10 +55,15 @@ const NavBar = ({ title }: NavBarProps) => {
               color={'violet.600'}
               display={{ base: 'none', md: 'inline-flex' }}
             >
-              <Btn title="Home" onClick={() => navigate('/')} />
-              <Btn title="Glossário" onClick={() => navigate('/glossary')} />
+              {MENU_LINKS.map((props, i) => (
+                <Btn
+                  key={i}
+                  aria-label={props.title}
+                  title={props.label}
+                  onClick={() => navigate(props.path)}
+                />
+              ))}
             </HStack>
-
             <NavBarMobile />
           </HStack>
         </Flex>

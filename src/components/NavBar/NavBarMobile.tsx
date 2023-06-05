@@ -17,10 +17,10 @@ function NavBarMobile() {
     <Box display={{ base: 'inline-flex', md: 'none' }}>
       <IconButton
         display={{ base: 'flex', md: 'none' }}
-        aria-label="Open menu"
-        fontSize="20px"
-        color="zinc.100"
-        variant="ghost"
+        aria-label="Abrir Menu de Navegação"
+        fontSize={'20px'}
+        color={'zinc.100'}
+        variant={'ghost'}
         icon={<AiOutlineMenu />}
         onClick={mobileNav.onOpen}
       />
@@ -40,13 +40,17 @@ function NavBarMobile() {
         shadow={'sm'}
         zIndex={2}
       >
-        <CloseButton aria-label="Close menu" onClick={mobileNav.onClose} />
+        <CloseButton
+          aria-label="Fechar Menu de Navegação"
+          onClick={mobileNav.onClose}
+        />
 
         {MENU_LINKS.map((props, index) => (
           <NavLink
             key={`${props}${index}`}
             label={props.label}
             path={props.path}
+            title={props.title}
             onHandleClick={mobileNav.onClose}
           />
         ))}

@@ -22,7 +22,7 @@ const CardTableContent = ({ notes }: CardTableContentProps) => {
       fontFamily={'Poppins'}
     >
       {LIST_NOTES.map((notes, i) => (
-        <Flex key={i} align={'center'}>
+        <Flex key={i} align={'center'} gap={4}>
           <span>{notes}</span>
         </Flex>
       ))}

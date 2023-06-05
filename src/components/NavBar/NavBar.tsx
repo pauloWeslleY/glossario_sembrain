@@ -42,7 +42,7 @@ const NavBar = ({ title }: NavBarProps) => {
               fontFamily={'Poppins'}
               fontSize={'xl'}
               fontWeight={'bold'}
-              color={'zinc.100'}
+              color={'whiteAlpha.900'}
               ml={2}
             >
               {title}
@@ -60,6 +60,7 @@ const NavBar = ({ title }: NavBarProps) => {
                   key={i}
                   aria-label={props.title}
                   title={props.label}
+                  color={'whiteAlpha.900'}
                   onClick={() => navigate(props.path)}
                 />
               ))}

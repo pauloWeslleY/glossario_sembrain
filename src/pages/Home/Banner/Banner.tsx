@@ -18,6 +18,7 @@ interface BannerProps {
 
 const Banner = ({ title, subtitle, coverUrl }: BannerProps) => {
   const navigate = useNavigate()
+  const shadowText = '2px 2px 2px #d8b4fe'
 
   return (
     <Box
@@ -31,14 +32,15 @@ const Banner = ({ title, subtitle, coverUrl }: BannerProps) => {
       }}
     >
       <Flex
+        as={'section'}
         align={'center'}
         pos={'relative'}
         justify={'center'}
         boxSize={'full'}
         bg={'whiteAlpha.400'}
       >
-        <Stack textAlign={'center'} alignItems={'center'} spacing={6}>
-          <Stack spacing={6} w={'full'} maxW={'lg'}>
+        <Stack textAlign={'center'} alignItems={'center'} spacing={10}>
+          <Stack w={'full'} maxW={'lg'}>
             <Heading
               fontFamily={'Poppins'}
               fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
@@ -47,7 +49,8 @@ const Banner = ({ title, subtitle, coverUrl }: BannerProps) => {
                 as={'span'}
                 position={'relative'}
                 color={'violet.600'}
-                textShadow={'2px 2px 2px #d8b4fe'}
+                textShadow={shadowText}
+                letterSpacing={'tighter'}
                 zIndex={1}
                 _after={{
                   content: "''",
@@ -64,9 +67,10 @@ const Banner = ({ title, subtitle, coverUrl }: BannerProps) => {
               </Text>
               <br />{' '}
               <Text
-                as={'h3'}
+                as={'span'}
                 color={'violet.600'}
-                textShadow={'2px 2px 2px #d8b4fe'}
+                textShadow={shadowText}
+                letterSpacing={'wide'}
               >
                 {subtitle}
               </Text>{' '}

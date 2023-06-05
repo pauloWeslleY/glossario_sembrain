@@ -6,10 +6,11 @@ import { NOTES } from './repositories/notes'
 
 const CardTableGlossary = () => {
   return (
-    <Stack direction={{ base: 'column' }} my={5}>
+    <Stack as={'article'} direction={{ base: 'column' }} my={5}>
       {NOTES.map((props, index) => (
         <Flex
           key={index}
+          as={'section'}
           direction={{ base: 'row', md: 'column' }}
           bg={'purple.200'}
           rounded={'md'}

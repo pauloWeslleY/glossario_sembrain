@@ -6,6 +6,7 @@ import {
   Heading,
   Stack,
   Text,
+  VisuallyHidden,
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { Btn } from '../../../components/Button'
@@ -31,6 +32,11 @@ const Banner = ({ title, subtitle, coverUrl }: BannerProps) => {
         height: 'calc(100vh - 72px)',
       }}
     >
+      <VisuallyHidden>
+        Dedos de uma pessoa fazendo uma leitura musical em braille. Na folha em
+        branco, um desenho livre de uma pauta musical com figuras rítmicas
+        preenche o espaço entre os dedos e o fim da folha.
+      </VisuallyHidden>
       <Flex
         as={'section'}
         align={'center'}

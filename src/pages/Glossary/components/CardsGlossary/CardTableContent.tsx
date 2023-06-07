@@ -13,7 +13,7 @@ const CardTableContent = ({ notes }: CardTableContentProps) => {
   return (
     <SimpleGrid
       spacingY={3}
-      columns={{ base: 1, md: 9 }}
+      columns={{ base: 1, md: 1 }}
       w={'full'}
       py={1}
       px={10}
@@ -22,7 +22,7 @@ const CardTableContent = ({ notes }: CardTableContentProps) => {
       fontFamily={'Poppins'}
     >
       {LIST_NOTES.map((notes, i) => (
-        <Flex key={i} align={'center'} gap={4}>
+        <Flex key={i} align={'center'} justify={'center'}>
           <span>{notes}</span>
         </Flex>
       ))}

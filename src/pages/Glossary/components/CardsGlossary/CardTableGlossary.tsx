@@ -1,8 +1,9 @@
 import { memo } from 'react'
 import { Flex, Stack } from '@chakra-ui/react'
-import { CardTableContent } from './index'
+import { CardTableContent, CardTableHeader } from './index'
 
 import { NOTES } from './repositories/notes'
+import HEAD from './repositories/header'
 
 const CardTableGlossary = () => {
   return (
@@ -11,11 +12,12 @@ const CardTableGlossary = () => {
         <Flex
           key={index}
           as={'section'}
-          direction={{ base: 'row', md: 'column' }}
+          direction={{ base: 'row' }}
           bg={'purple.200'}
           rounded={'md'}
           shadow={'lg'}
         >
+          <CardTableHeader head={HEAD} />
           <CardTableContent notes={props} />
         </Flex>
       ))}

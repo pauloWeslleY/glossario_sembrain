@@ -1,5 +1,6 @@
 import { Container, Flex, Heading, Text } from '@chakra-ui/react'
 import { CardTableGlossary } from './components/CardsGlossary'
+import { HeroExercise } from './components/HeroExercise'
 
 export function Glossary() {
   return (
@@ -22,7 +23,11 @@ export function Glossary() {
         notas e os respectivos pontos a serem preenchidos na célula braille.
       </Text>
 
-      <CardTableGlossary />
+      <Container maxW={'3xl'}>
+        <CardTableGlossary />
+      </Container>
+
+      <HeroExercise />
 
       <Text as={'footer'} mb={2} color={'violet.400'}>
         <small>

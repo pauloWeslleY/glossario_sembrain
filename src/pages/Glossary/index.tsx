@@ -1,10 +1,20 @@
-import { Container, Flex, Heading, Text } from '@chakra-ui/react'
+import { Container, Flex, HStack, Heading, Text } from '@chakra-ui/react'
 import { CardTableGlossary } from './components/CardsGlossary'
 import { HeroExercise } from './components/HeroExercise'
 
 export function Glossary() {
   return (
     <Container as={'main'} maxW={'8xl'}>
+      <HStack my={2}>
+        <Text
+          color={'violet.400'}
+          fontWeight={'semibold'}
+          textTransform={'uppercase'}
+        >
+          Módulo 1
+        </Text>
+      </HStack>
+
       <Flex as={'header'} mt={4}>
         <Heading
           as={'h2'}

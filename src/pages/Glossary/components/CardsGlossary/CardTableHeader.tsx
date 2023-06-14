@@ -11,7 +11,7 @@ const CardTableHeader = ({ head }: { head: Array<string> }) => (
     color={'zinc.500'}
     py={{ base: 1 }}
     px={{ base: 2, md: 10 }}
-    fontSize={'md'}
+    fontSize={['sm', 'md']}
     fontWeight={'semibold'}
     fontFamily={'Poppins'}
   >
